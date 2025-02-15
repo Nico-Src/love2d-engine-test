@@ -20,7 +20,7 @@ end
 
 function EffectManager:update(dt)
     self.phase = (self.phase + (dt * 10)) % 100
-    self.effects['main'].scanlines.phase = phase
+    self.effects['main'].scanlines.phase = self.phase
 end
 
 function EffectManager:getEffect(id)

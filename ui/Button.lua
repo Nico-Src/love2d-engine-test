@@ -6,7 +6,6 @@ function Button:new(x,y,size,file,text,onClick)
     self.scale = Vector2D(1, 1)
     self.sprite = love.graphics.newImage("assets/buttons/"..file..".png")
     self.pressed_sprite = love.graphics.newImage("assets/buttons/"..file.."_pressed.png")
-    print(self.sprite:getWidth(), self.sprite:getHeight())
     self.text = text
     self.sprite:setFilter("nearest", "nearest")
     self.pressed_sprite:setFilter("nearest", "nearest")
